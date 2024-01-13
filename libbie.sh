@@ -54,7 +54,7 @@ fi
 if [[ $splash == true ]]; then
 	if [[ $local == true && $splashname != "all" ]]; then
 		if [[ $splashname == "" || !$splashname ]]; then
-			splashname = "default";
+			splashname=default
 		fi
 		cp "splash/$splashname.png" "$LIBREOFFICE_PROGRAM_DIR/intro.png"
 		printf "Splash should now be installed!\n"
