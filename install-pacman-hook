@@ -1,0 +1,5 @@
+#!/usr/bin/fish
+cp ./patch-the-libbie-in.hook /usr/share/libalpm/hooks/ || exit 1
+and mkdir -p /opt/libbie
+and cp ./install-splash-o7.sh /opt/libbie/patch
+and rsync -a splash/ /opt/libbie/splash/

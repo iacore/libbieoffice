@@ -1,0 +1,11 @@
+[Trigger]
+Type = Path
+Operation = Install
+Operation = Upgrade
+Target = usr/lib/libreoffice/program/intro.png
+Target = usr/lib/libreoffice/program/intro-highres.png
+
+[Action]
+Description = Patching in Libbie...
+When = PostTransaction
+Exec = /opt/libbie/patch
